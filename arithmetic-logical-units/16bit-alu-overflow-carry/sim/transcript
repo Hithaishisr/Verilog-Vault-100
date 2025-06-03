@@ -1,0 +1,39 @@
+# //  Questa Sim-64
+# //  Version 2024.1 win64 Feb  1 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# vsim -voptargs="+acc" alu_16_bit.alu_16_bit_tb 
+# Start time: 01:47:39 on Jun 04,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.alu_16_bit_tb(fast)
+# Loading work.alu_16_bit(fast)
+add wave -position insertpoint  \
+sim:/alu_16_bit_tb/A \
+sim:/alu_16_bit_tb/B \
+sim:/alu_16_bit_tb/ALUOp \
+sim:/alu_16_bit_tb/Result \
+sim:/alu_16_bit_tb/Carry \
+sim:/alu_16_bit_tb/Overflow \
+sim:/alu_16_bit_tb/Zero \
+sim:/alu_16_bit_tb/Negative
+run -all
+# ** Note: $finish    : ../tb/alu_16_bit_tb.v(124)
+#    Time: 65 ns  Iteration: 0  Instance: /alu_16_bit_tb
+# 1
+# Break in Module alu_16_bit_tb at ../tb/alu_16_bit_tb.v line 124
+# End time: 01:48:07 on Jun 04,2025, Elapsed time: 0:00:28
+# Errors: 0, Warnings: 1
