@@ -74,6 +74,8 @@ This project implements a parameterizable Barrel Shifter in Verilog, capable of 
 
 ![Simulation](sim/simulation.png)
 
+![Schematic](synth/schematic.png)
+
 ## 📌 Author
 
 - Name: Hithaishi S R
