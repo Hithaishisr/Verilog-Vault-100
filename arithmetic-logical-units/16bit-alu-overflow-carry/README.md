@@ -72,6 +72,8 @@ This project implements a 16-bit Arithmetic Logic Unit (ALU) in Verilog, accompa
 
 ![Simulation](sim/simulation.png)
 
+![Schematic](synth/schematic.png)
+
 ## 📌 Author
 
 - Name: Hithaishi S R
