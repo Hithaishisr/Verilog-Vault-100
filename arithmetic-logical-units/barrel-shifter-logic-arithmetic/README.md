@@ -70,6 +70,10 @@ This project implements a parameterizable Barrel Shifter in Verilog, capable of 
 | Gate-Level Netlist            | ✅ Available     |
 | Schematic Diagram             | ✅ Available     |
 
+## 🖼️ Screenshots
+
+![Simulation](sim/simulation.png)
+
 ## 📌 Author
 
 - Name: Hithaishi S R
