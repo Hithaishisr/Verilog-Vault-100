@@ -1,0 +1,38 @@
+# //  Questa Sim-64
+# //  Version 2024.1 win64 Feb  1 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# vsim -voptargs="+acc" barrel_shifter.barrel_shifter_tb 
+# Start time: 22:28:10 on Jun 04,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.barrel_shifter_tb(fast)
+# Loading work.barrel_shifter(fast)
+add wave -position insertpoint  \
+sim:/barrel_shifter_tb/data_width \
+sim:/barrel_shifter_tb/shift_amt_width \
+sim:/barrel_shifter_tb/data_in \
+sim:/barrel_shifter_tb/shift_amt \
+sim:/barrel_shifter_tb/dir \
+sim:/barrel_shifter_tb/arith \
+sim:/barrel_shifter_tb/data_out
+run -all
+# ** Note: $finish    : ../tb/barrel_shifter_tb.v(64)
+#    Time: 40 ns  Iteration: 0  Instance: /barrel_shifter_tb
+# 1
+# Break in Module barrel_shifter_tb at ../tb/barrel_shifter_tb.v line 64
+# End time: 22:29:19 on Jun 04,2025, Elapsed time: 0:01:09
+# Errors: 0, Warnings: 1

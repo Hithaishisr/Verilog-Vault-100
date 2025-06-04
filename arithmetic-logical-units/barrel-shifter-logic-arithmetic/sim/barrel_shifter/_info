@@ -1,0 +1,72 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2024.1 2024.02, Feb  1 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/VS Code/Verilog Vault 100/arithmetic-logical-units/barrel-shifter-logic-arithmetic/sim
+T_opt
+!s110 1749056290
+VGHhT^^bZ=<7bLYL@U;g^R1
+04 17 4 work barrel_shifter_tb fast 0
+=1-ec63d7334f0a-68407b22-2c9-48d4
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work barrel_shifter +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2024.1;79
+vbarrel_shifter
+Z3 2../rtl/barrel_shifter.v|../tb/barrel_shifter_tb.v
+Z4 !s110 1749056287
+!i10b 1
+!s100 7>Y]d:BoS9NR7Tfl@L7gQ1
+Ib2gC4MRmH8emVmMSASO^_1
+R1
+w1749053754
+8../rtl/barrel_shifter.v
+F../rtl/barrel_shifter.v
+!i122 0
+L0 17 30
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2024.1;79
+r1
+!s85 0
+31
+Z7 !s108 1749056287.000000
+Z8 !s107 ../tb/barrel_shifter_tb.v|../rtl/barrel_shifter.v|
+Z9 !s90 -work|barrel_shifter|+acc|../rtl/barrel_shifter.v|../tb/barrel_shifter_tb.v|
+!i113 0
+Z10 o-work barrel_shifter +acc -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vbarrel_shifter_tb
+R3
+R4
+!i10b 1
+!s100 Y5PGzTXUof:aPGAdJAjFf1
+I[nSE?RVzXAGK=iO?glWiM1
+R1
+w1749056284
+8../tb/barrel_shifter_tb.v
+F../tb/barrel_shifter_tb.v
+!i122 0
+L0 2 66
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R2
