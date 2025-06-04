@@ -68,6 +68,10 @@ This project implements a 16-bit Arithmetic Logic Unit (ALU) in Verilog, accompa
 | Gate-Level Netlist        | ✅ Available |
 | Schematic PDF             | ✅ Available |
 
+## 🖼️ Screenshots
+
+![Simulation](sim/simulation.png)
+
 ## 📌 Author
 
 - Name: Hithaishi S R
