@@ -1,0 +1,40 @@
+# //  Questa Sim-64
+# //  Version 2024.1 win64 Feb  1 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# vsim -voptargs="+acc" non_restoring_divider.non_restoring_divider_tb 
+# Start time: 10:37:59 on Jun 08,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Note: (vopt-143) Recognized 1 FSM in module "non_restoring_divider(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.non_restoring_divider_tb(fast)
+# Loading work.non_restoring_divider(fast)
+add wave -position insertpoint  \
+sim:/non_restoring_divider_tb/width \
+sim:/non_restoring_divider_tb/clk \
+sim:/non_restoring_divider_tb/rst \
+sim:/non_restoring_divider_tb/start \
+sim:/non_restoring_divider_tb/signed_op \
+sim:/non_restoring_divider_tb/dividend \
+sim:/non_restoring_divider_tb/divisor \
+sim:/non_restoring_divider_tb/done \
+sim:/non_restoring_divider_tb/error \
+sim:/non_restoring_divider_tb/busy \
+sim:/non_restoring_divider_tb/quotient \
+sim:/non_restoring_divider_tb/remainder
+run 1500
+# End time: 10:39:50 on Jun 08,2025, Elapsed time: 0:01:51
+# Errors: 0, Warnings: 1

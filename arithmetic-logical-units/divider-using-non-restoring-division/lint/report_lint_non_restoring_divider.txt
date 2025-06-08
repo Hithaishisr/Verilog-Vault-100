@@ -1,0 +1,104 @@
+
+  -----------------------------------------------------------------------------
+  Report Summary
+  -----------------------------------------------------------------------------
+  Product Info
+    Name    : VC Static Master Shell
+    Version : T-2022.06 -- May 30, 2022
+
+  Report Info
+    Created : Jun 08, 2025  10:42:10
+
+    TopLevelModule: non_restoring_divider
+
+  -----------------------------------------------------------------------------
+  Management Summary
+  -----------------------------------------------------------------------------
+  Stage             Family      Fatals    Errors  Warnings     Infos
+  -----             --------  --------  --------  --------  --------
+  LANGUAGE_CHECK    CODING           0         0         0         1
+  STRUCTURAL_CHECK  CODING           0         0         0         5
+  -----             --------  --------  --------  --------  --------
+  Total                              0         0         0         6
+
+
+  -----------------------------------------------------------------------------
+  Tree Summary
+  -----------------------------------------------------------------------------
+  Severity  Stage             Tag                  Count
+  --------  -----             -------------------  -----
+  info      LANGUAGE_CHECK    ReportPortInfo-ML        1
+  info      STRUCTURAL_CHECK  RegInputOutput-ML        5
+  --------  -----             -------------------  -----
+  Total                                                6
+
+
+
+  -----------------------------------------------------------------------------
+  RegInputOutput-ML  (5 infos/0 waived)
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:5
+  Goal                : lint_rtl
+  FileName            : ../rtl/non_restoring_divider.v
+  LineNumber          : 30
+  Statement           :   input [(width-1):0] divisor; 
+  Signal              : divisor[7:0]
+  Module              : non_restoring_divider
+  DesignObjHierarchy  : non_restoring_divider
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:2
+  Goal                : lint_rtl
+  FileName            : ../rtl/non_restoring_divider.v
+  LineNumber          : 28
+  Statement           :   input clk, rst, start, signed_op; 
+  Signal              : start
+  Module              : non_restoring_divider
+  DesignObjHierarchy  : non_restoring_divider
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:4
+  Goal                : lint_rtl
+  FileName            : ../rtl/non_restoring_divider.v
+  LineNumber          : 29
+  Statement           :   input [(width-1):0] dividend; 
+  Signal              : dividend[7:0]
+  Module              : non_restoring_divider
+  DesignObjHierarchy  : non_restoring_divider
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:3
+  Goal                : lint_rtl
+  FileName            : ../rtl/non_restoring_divider.v
+  LineNumber          : 28
+  Statement           :   input clk, rst, start, signed_op; 
+  Signal              : signed_op
+  Module              : non_restoring_divider
+  DesignObjHierarchy  : non_restoring_divider
+  -----------------------------------------------------------------------------
+  Tag                 : RegInputOutput-ML
+  Description         : Port '[Signal]' is not registered [Hierarchy: '[DesignObjHierarchy]']
+  Violation           : Lint:1
+  Goal                : lint_rtl
+  FileName            : ../rtl/non_restoring_divider.v
+  LineNumber          : 28
+  Statement           :   input clk, rst, start, signed_op; 
+  Signal              : rst
+  Module              : non_restoring_divider
+  DesignObjHierarchy  : non_restoring_divider
+
+  -----------------------------------------------------------------------------
+  ReportPortInfo-ML  (1 info/0 waived)
+  -----------------------------------------------------------------------------
+  Tag           : ReportPortInfo-ML
+  Description   : Port Information for top design unit has been generated. For details see report ReportPortInfo.rpt
+  Violation     : Lint:6
+  Goal          : lint_rtl
+  FileName      : /home1/B116/HithaiShiSR/VLSI_RN_OFFLINE/Verilog_labs/Temp/lint/vcst_rtdb/spyglass/vc_lint0/non_restoring_divider/VC_GOAL0/spyglass_reports/morelint/ReportPortInfo
+  LineNumber    : 1
+  Statement     : #     Comment          : Report Top Level Module Port Info
