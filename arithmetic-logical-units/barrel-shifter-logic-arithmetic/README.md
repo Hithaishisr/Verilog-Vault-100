@@ -47,7 +47,7 @@ This project implements a parameterizable Barrel Shifter in Verilog, capable of 
 - **Directory**: `synth/`
 - **Output Files**:
   - `barrel_shifter_netlist.v`: Synthesized gate-level netlist
-  - `schematic.pdf`: Post-synthesis schematic for visual inspection
+  - `schematic.png`: Post-synthesis schematic for visual inspection
 - **Notes**: Synthesized targeting standard cell library `lsi_10k.db`.
 
 ## 📝 How to Run Simulations
