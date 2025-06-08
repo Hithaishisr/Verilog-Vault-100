@@ -45,7 +45,7 @@ This project implements a 16-bit Arithmetic Logic Unit (ALU) in Verilog, accompa
 - **Directory**: `synth/`
 - **Output Files**:
   - `alu_16_bit_netlist.v`: Gate-level netlist
-  - `schematic.pdf`: Post-synthesis schematic diagram
+  - `schematic.png`: Post-synthesis schematic diagram
 - **Notes**: Design was synthesized targeting the library `lsi_10k.db`.
 
 ## 📝 How to Run Simulations
