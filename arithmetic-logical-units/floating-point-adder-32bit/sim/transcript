@@ -1,0 +1,44 @@
+# //  Questa Sim-64
+# //  Version 2024.1 win64 Feb  1 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# vsim -voptargs="+acc" floating_point_adder.floating_point_adder_tb 
+# Start time: 19:04:50 on Jun 15,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Note: (vopt-143) Recognized 1 FSM in module "floating_point_adder(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.floating_point_adder_tb(fast)
+# Loading work.floating_point_adder(fast)
+run -all
+# Time=5 | A=00000000, B=00000000 => Result=00000000 | valid=0, overflow=0, underflow=0
+# Time=95 | A=40628f5c, B=40100000 => Result=40b947ae | valid=1, overflow=0, underflow=0
+# Time=175 | A=40628f5c, B=c0100000 => Result=3fa51eb8 | valid=1, overflow=0, underflow=0
+# Time=255 | A=c0628f5c, B=40100000 => Result=bfa51eb8 | valid=1, overflow=0, underflow=0
+# Time=345 | A=c0628f5c, B=c0100000 => Result=c0b947ae | valid=1, overflow=0, underflow=0
+# Time=435 | A=c2031eb8, B=c4bb91ec => Result=c4bfaae1 | valid=1, overflow=0, underflow=0
+# Time=475 | A=00000000, B=00000000 => Result=00000000 | valid=1, overflow=0, underflow=0
+# Time=515 | A=00000000, B=c0628f5c => Result=c0628f5c | valid=1, overflow=0, underflow=0
+# Time=555 | A=40628f5c, B=00000000 => Result=40628f5c | valid=1, overflow=0, underflow=0
+# Time=595 | A=7f800000, B=7f800000 => Result=7f800000 | valid=1, overflow=0, underflow=0
+# Time=635 | A=7f800000, B=ff800000 => Result=ff800001 | valid=0, overflow=0, underflow=0
+# Time=795 | A=7f7fffff, B=7f7fffff => Result=7f800000 | valid=0, overflow=1, underflow=0
+# Time=925 | A=00000001, B=00000001 => Result=00000000 | valid=0, overflow=0, underflow=1
+# ** Note: $finish    : ../tb/floating_point_adder_tb.v(240)
+#    Time: 1050 ns  Iteration: 0  Instance: /floating_point_adder_tb
+# 1
+# Break in Module floating_point_adder_tb at ../tb/floating_point_adder_tb.v line 240
+# End time: 19:05:18 on Jun 15,2025, Elapsed time: 0:00:28
+# Errors: 0, Warnings: 1

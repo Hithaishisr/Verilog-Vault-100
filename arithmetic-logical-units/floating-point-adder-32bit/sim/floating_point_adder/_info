@@ -1,0 +1,72 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2024.1 2024.02, Feb  1 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/VS Code/Verilog Vault 100/arithmetic-logical-units/floating-point-adder-32bit/sim
+T_opt
+!s110 1749994491
+V32Gn5i=`U:ISIlnjc7FZ^2
+04 23 4 work floating_point_adder_tb fast 0
+=1-ec63d7334f0a-684ecbfa-368-493c
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work floating_point_adder +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2024.1;79
+vfloating_point_adder
+Z3 2../rtl/floating_point_adder.v|../tb/floating_point_adder_tb.v
+Z4 !s110 1749994487
+!i10b 1
+!s100 V4eHfPLQN8P0_4SQO:T:m3
+I]]4PT6V`:]1QFD4o0_lcB0
+R1
+w1749994479
+8../rtl/floating_point_adder.v
+F../rtl/floating_point_adder.v
+!i122 0
+L0 2 283
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2024.1;79
+r1
+!s85 0
+31
+Z7 !s108 1749994487.000000
+Z8 !s107 ../tb/floating_point_adder_tb.v|../rtl/floating_point_adder.v|
+Z9 !s90 -work|floating_point_adder|+acc|../rtl/floating_point_adder.v|../tb/floating_point_adder_tb.v|
+!i113 0
+Z10 o-work floating_point_adder +acc -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vfloating_point_adder_tb
+R3
+R4
+!i10b 1
+!s100 ;N_YK>?iCBXQ;_3a@7;>H2
+IjCbD4Kk52In_>;dQfo:WL3
+R1
+w1749986797
+8../tb/floating_point_adder_tb.v
+F../tb/floating_point_adder_tb.v
+!i122 0
+L0 2 242
+R5
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 0
+R10
+R2
