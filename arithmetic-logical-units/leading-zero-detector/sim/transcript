@@ -1,0 +1,47 @@
+# //  Questa Sim-64
+# //  Version 2024.1 win64 Feb  1 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# vsim -voptargs="+acc" lzd.lzd_tb 
+# Start time: 01:03:51 on Jun 16,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Note: (vopt-143) Recognized 1 FSM in module "lzd(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.lzd_tb(fast)
+# Loading work.lzd(fast)
+add wave -position insertpoint  \
+sim:/lzd_tb/clk \
+sim:/lzd_tb/rst_n \
+sim:/lzd_tb/start \
+sim:/lzd_tb/data_in \
+sim:/lzd_tb/count \
+sim:/lzd_tb/all_zero \
+sim:/lzd_tb/busy \
+sim:/lzd_tb/done \
+sim:/lzd_tb/i
+run -all
+# time : 5 | data_in = 0 | count = 0, all_zero = 0, done = 0
+# time : 25 | data_in = 0 | count = 64, all_zero = 1, done = 1
+# time : 695 | data_in = 1 | count = 63, all_zero = 0, done = 1
+# time : 1075 | data_in = 303379748 | count = 35, all_zero = 0, done = 1
+# time : 1425 | data_in = 3230228097 | count = 32, all_zero = 0, done = 1
+# time : 2525 | data_in = 112818957 | count = 37, all_zero = 0, done = 1
+# ** Note: $finish    : ../tb/lzd_tb.v(69)
+#    Time: 2625 ns  Iteration: 0  Instance: /lzd_tb
+# 1
+# Break in Module lzd_tb at ../tb/lzd_tb.v line 69
+# End time: 01:06:09 on Jun 16,2025, Elapsed time: 0:02:18
+# Errors: 0, Warnings: 1
